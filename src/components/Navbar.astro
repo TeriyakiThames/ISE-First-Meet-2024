@@ -1,0 +1,45 @@
+<div class="navbar">
+    <a href="/"> Home </a>
+    <a href="/handbook"> Handbook </a>
+    <a href="cards"> Cards </a>
+    <a href="leaderboard"> Leaderboard </a>
+</div>
+
+<style>
+        @font-face {
+            font-family: 'Maharlika';
+            src: url('/fonts/Maharlika.ttf') format('ttf');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-top:2.5%;
+            }
+    
+        .navbar a {
+            color: white;
+            font-size: 25px;
+            font-family: "Maharlika";
+            transition: color 0.3s;
+        }
+    
+        .navbar a:hover {
+                color: #C8A263;
+        }
+    
+        @media (max-width: 480px) {
+            .navbar {
+                gap: 25px;
+                margin-top:10%;
+            }
+    
+            .navbar a {
+                font-size: 12.5px;
+            }
+        }
+    </style>

@@ -1,0 +1,45 @@
+---
+interface Props {
+    image: string;
+    groupName: string;
+    cardNunber: string;
+}
+
+const { image, groupName, cardNunber } = Astro.props;
+---
+
+<div id="group_info">
+    <img id="image" src={image} alt="Profile Picutre">
+    <div id="info_box">
+        <h2>{groupName}</h2>
+        <h2>{cardNunber}</h2>
+    </div>
+</div>
+
+<style>
+    #image {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        #group_info {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center; 
+            margin-bottom: 15px;
+        }
+
+        #info_box {
+            background-color: #DAC7A6;
+            display: flex;
+            border-radius: 25px;
+            gap: 15%;
+            width: 75%;
+            font-family: "Maharlika";
+            color: #544122;
+            justify-content: space-between;
+            padding: 10px
+        }
+</style>

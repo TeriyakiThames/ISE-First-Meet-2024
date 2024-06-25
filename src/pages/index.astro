@@ -1,36 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout title="ISE First Meet 2024 The Arcana">
 	<main>
+		<Navbar/>
 		<h1 class = "event_title">ISE First Meet 2024</span></h1>
 		<h1 class = "the_arcana">The Arcana</span></h1>
 		<ul role="list" class="link-card-grid">
 			<Card
-			imageFront ="/card_front.png"
-			imageBack ="/card_back.png"
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
 			<Card
-			imageFront ="/card_front.png"
-			imageBack ="/card_back.png"
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
 			<Card
-			imageFront ="/card_front.png"
-			imageBack ="/card_back.png"
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
 			<Card
-			imageFront ="/card_front.png"
-			imageBack ="/card_back.png"
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
 			<Card
-			imageFront ="/card_front.png"
-			imageBack ="/card_back.png"
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
 			title ='card'
 			/>				
 		</ul>
@@ -40,21 +42,6 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
-	@font-face {
-		font-family: 'Maharlika';
-		src: url('/fonts/Maharlika.ttf') format('ttf');
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-		}
-
-	@font-face {
-		font-family: 'Bruney';
-		src: url('/fonts/Bruney.ttf') format('ttf');
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-		}
 	main {
 		margin: auto;
 		padding: 1rem;
