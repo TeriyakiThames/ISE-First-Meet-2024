@@ -4,6 +4,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import { randomGroupName } from "../scripts/test.js"
 
 const firebaseConfig = {
     apiKey: "AIzaSyByuVonqqni8v-zmMa4fhXrp6jldi7hHFk",
@@ -24,8 +25,8 @@ const db = getFirestore(app)
 export async function addToDB() {
     try {
         const docRef = await addDoc(collection(db, "Groups"), {
-            groupName: "The Fool",
-            cards: "Card 1",
+            groupName: randomGroupName(),
+            cardsHeld: 12,
         });
         console.log("Document written with ID: ", docRef.id);
     } catch (e) {
