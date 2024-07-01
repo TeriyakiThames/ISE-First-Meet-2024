@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Testing Firebase">
+    <main class="flex-container">
+        <div id="middle" class="centered-content">
+            <h1 class="text-white text-center" style="font-size: 25px; font-family: Maharlika;">Testing</h1>
+            <button id="testButton" class="bg-yellow-500 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded mt-4"> Test </button>
+            <button id="addButton" class="bg-yellow-500 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded mt-4"> Add to DB </button>
+            <button id="readButton" class="bg-yellow-500 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded mt-4"> Read from DB </button>
+        </div>
+
+        
+
+    <script>
+        import { testClick } from "../scripts/test.js"
+        import { addToDB } from "../scripts/addData.js"
+        import { readFromDB } from "../scripts/readData.js"
+
+        document.getElementById('testButton').addEventListener('click', () => {
+            testClick();
+        });
+        document.getElementById('addButton').addEventListener('click', () => {
+            addToDB();
+        });
+        document.getElementById('readButton').addEventListener('click', () => {
+            readFromDB();
+        });
+    </script>
+    </main>
+</Layout>
+
+<style>
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .centered-content {
+        text-align: center;
+    }
+</style>
+
+
+
