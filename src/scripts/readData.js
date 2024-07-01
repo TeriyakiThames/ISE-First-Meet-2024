@@ -3,7 +3,7 @@
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs, doc, getDoc } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyByuVonqqni8v-zmMa4fhXrp6jldi7hHFk",
@@ -27,3 +27,17 @@ export async function readFromDB() {
         console.log(`${doc.id} => ${doc.data()}`);
     });    
 }
+
+export async function readFromDocument() {
+    const docRef = doc(db, "cities", "SF");
+    const docSnap = await getDoc(docRef);
+    
+    if (docSnap.exists()) {
+        console.log("Document data:", docSnap.data());
+    } else {
+      // docSnap.data() will be undefined in this case
+        console.log("No such document!");
+    }   
+}
+
+
