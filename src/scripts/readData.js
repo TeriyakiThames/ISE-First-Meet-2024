@@ -1,3 +1,6 @@
+
+//https://firebase.google.com/docs/firestore/quickstart#read_data
+
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";

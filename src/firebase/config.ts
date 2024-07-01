@@ -19,4 +19,4 @@ const analytics = getAnalytics(app);
 
 //https://youtu.be/Kjro6HzFCk0?t=406 from this video
 //https://firebase.google.com/docs/firestore/quickstart#add_data
-export const firestore_db = getFirestore(app)
+const firestore_db = getFirestore(app)
