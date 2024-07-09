@@ -8,6 +8,9 @@ export default {
 				"light-gold" : "#DAC7A6",
 				"brown" : "#544122"
 			},
+			fontFamily: {
+				maharlika: ['Maharlika', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],

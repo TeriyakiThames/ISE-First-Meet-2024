@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<Layout title="ISE First Meet 2024 The Arcana">
+	<main>
+		<Navbar/>
+        <div id="title">
+            <h1>ISE First Meet 2024</h1>
+            <h2>The Arcana</h2>
+        </div>
+
+        <div id="cards">
+            <div id="row1">
+                <Card
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
+			title ='card'
+			/>
+                <Card
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
+			title ='card'
+			/>
+                <Card
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
+			title ='card'
+			/>
+            </div>
+            <div id="row2">
+                <Card
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
+			title ='card'
+			/>
+                <Card
+			imageFront ="/images/card_front.png"
+			imageBack ="/images/card_back.png"
+			title ='card'
+			/>
+            </div>
+        </div>
+
+        <div id="countdown">
+            <h1>Time Until Next Card is Revealed</h1>
+            <h2>00:00:00</h2>
+        </div>
+    </main>
+</Layout>
+
+<style>
+
+    #title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        margin-top: 75px;
+    }
+
+    #title h1 {
+        color: white;
+        font-family: Maharlika;
+    }
+
+    #title h2 {
+        color: #C8A263;
+        font-family: Bruney;
+
+    }
+
+    #countdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Maharlika;
+        margin-top: 100px;
+    }
+
+    #countdown h1 {
+        color: white;
+        font-size: 20px;
+    }
+
+    #countdown h2 {
+        color: #C8A263;
+        font-size: 30px;
+    }
+
+    /* TODO */
+    @media (max-width: 1000px) {
+    #cards {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 90px;
+        margin: 25px;
+    }
+
+    #row1, #row2 {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+    }
+    }
+</style>
+

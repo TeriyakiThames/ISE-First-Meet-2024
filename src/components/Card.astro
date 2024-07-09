@@ -63,6 +63,23 @@ const { title, imageFront, imageBack } = Astro.props;
         object-fit: cover;
         border-radius: 7px;
     }
+
+    /* TODO */
+    @media (max-width: 1200px) {
+        .img {
+            width: 80px;
+            height: 140px
+        }
+
+        .card {
+            width: 80px;
+            height: 80px;
+        }
+
+        .card-front, .card-back {
+            width: 80px;
+        }
+    }
 </style>
 
 <script>
