@@ -58,14 +58,31 @@ const { title, imageFront, imageBack } = Astro.props;
     }
 
     .img {
-        width: 100%;
-        height: 100%;
+        width: 160px;
+        height: 280px;
         object-fit: cover;
         border-radius: 7px;
     }
 
-    /* TODO */
-    @media (max-width: 1200px) {
+/* Medium Screen */
+    @media (max-width: 1000px) {
+        .img {
+            width: 120px;
+            height: 210px
+        }
+
+        .card {
+            width: 120px;
+            height: 120px;
+        }
+
+        .card-front, .card-back {
+            width: 120px;
+        }
+    }
+
+/* Small Screen */
+@media (max-width: 600px) {
         .img {
             width: 80px;
             height: 140px
