@@ -2,117 +2,52 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
+import "../styles/index.css"
 ---
 
 <Layout title="ISE First Meet 2024 The Arcana">
 	<main>
 		<Navbar/>
-		<h1 class = "event_title">ISE First Meet 2024</span></h1>
-		<h1 class = "the_arcana">The Arcana</span></h1>
-		<ul role="list" class="link-card-grid">
-			<Card
+        <div id="title">
+            <h1>ISE First Meet 2024</h1>
+            <h2>The Arcana</h2>
+        </div>
+
+        <div id="cards">
+            <div id="row1">
+                <Card
 			imageFront ="/images/card_front.png"
 			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
-			<Card
+                <Card
 			imageFront ="/images/card_front.png"
 			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
-			<Card
+                <Card
 			imageFront ="/images/card_front.png"
 			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
-			<Card
+            </div>
+            <div id="row2">
+                <Card
 			imageFront ="/images/card_front.png"
 			imageBack ="/images/card_back.png"
 			title ='card'
 			/>
-			<Card
+                <Card
 			imageFront ="/images/card_front.png"
 			imageBack ="/images/card_back.png"
 			title ='card'
-			/>				
-		</ul>
-		<h1 class = "timer">Time Until Next Card is Revealed</span></h1>
-		<p class = "time"> 00:00:00 </p>
-	</main>
+			/>
+            </div>
+        </div>
+
+        <div id="countdown">
+            <h1>Time Until Next Card is Revealed</h1>
+            <h2>00:00:00</h2>
+        </div>
+    </main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 1440px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-
-	.event_title {
-		font-size: 70.15px;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-		font-family: 'Maharlika', sans-serif; 
-		position: absolute;
-		top: 10%; 
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.the_arcana {
-		font-size: 70.15px;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-		font-family: 'Bruney', sans-serif; 
-		position: absolute;
-		top: 22%; 
-		left: 50%;
-		transform: translateX(-50%);
-		color: #C8A263
-	}
-
-	.time {
-		font-size: 59.68px;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-		font-family: 'Bruney', sans-serif; 
-		position: absolute;
-		top: 83%; 
-		left: 50%;
-		transform: translateX(-50%);
-		color: #C8A263
-	}
-
-
-	.timer {
-		font-size: 41.92px;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-		font-family: 'Maharlika', sans-serif; 
-		position: absolute;
-		top: 75%; 
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-auto-flow: column;
-		gap: 34px;
-		padding: 0;
-		justify-content: center; 
-		align-items: center; 
-		position: absolute;
-		top: 47%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-</style>

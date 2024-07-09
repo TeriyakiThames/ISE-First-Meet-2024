@@ -6,42 +6,50 @@
 </div>
 
 <style>
-        @font-face {
-            font-family: 'Maharlika';
-            src: url('/fonts/Maharlika.ttf') format('ttf');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-    
+/* Large Screens */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin-top:2.5%;
+        width: 100%;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 25px;
+        font-family: "Maharlika";
+        transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #C8A263;
+    }
+
+/* Medium Screens */
+    @media (max-width: 1000px) {
         .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 100px;
-            margin-top:2.5%;
+        gap: 75px;
+        margin-top:2.5%;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 18.75px;
+    }
+    }
+
+/* Small Screens */
+    @media (max-width: 600px) {
+        .navbar {               
+            gap: 25px;
+            margin-top:10%;
             width: 100%;
-            }
+        }
 
         .navbar a {
-            color: white;
-            font-size: 25px;
-            font-family: "Maharlika";
-            transition: color 0.3s;
+            font-size: 15px;
         }
-    
-        .navbar a:hover {
-                color: #C8A263;
-        }
-    
-        @media (max-width: 480px) {
-            .navbar {
-                gap: 25px;
-                margin-top:10%;
-            }
-    
-            .navbar a {
-                font-size: 12.5px;
-            }
-        }
+    }
     </style>
