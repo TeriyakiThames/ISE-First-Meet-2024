@@ -8,9 +8,9 @@ interface Props {
 const { image, groupName, cardNunber } = Astro.props;
 ---
 
-<div id="group_info">
+<div id="parent">
     <img id="image" src={image} alt="Profile Picutre">
-    <div id="info_box">
+    <div id="child">
         <h2>{groupName}</h2>
         <h2>{cardNunber}</h2>
     </div>
@@ -23,7 +23,8 @@ const { image, groupName, cardNunber } = Astro.props;
         border-radius: 50%;
     }
 
-    #group_info {
+/* Large Screens */
+    #parent {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,7 +33,7 @@ const { image, groupName, cardNunber } = Astro.props;
         width: 450px;
     }
 
-    #info_box {
+    #child {
         background: linear-gradient(to right, #C8A263, #DAC7A6, #C8A263);
         display: flex;
         border-radius: 25px;
@@ -42,5 +43,12 @@ const { image, groupName, cardNunber } = Astro.props;
         color: #544122;
         justify-content: space-between;
         padding: 10px
+    }
+
+/* Small Screens */
+    @media (max-width: 600px) {
+    #parent {
+        width: 90%;
+    }
     }
 </style>
