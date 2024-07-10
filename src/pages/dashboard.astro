@@ -2,16 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import GroupInfo from '../components/Group_info.astro';
-import "../styles/leaderboard.css"
+import Title from '../components/Title.astro';
 ---
 
-<Layout title="Leaderboard">
+<Layout title="Dashboard">
 	<main>
-		<div id="header">
-			<Navbar/>
-			<h1>Leaderboard</h1>
-		</div>
-
+		<Navbar/>
+		<Title title_name = "Dashboard"></Title>
 		<div id="group display table">
 			<!-- 1 -->
 			<GroupInfo

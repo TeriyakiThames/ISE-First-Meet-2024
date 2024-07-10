@@ -1,0 +1,33 @@
+---
+interface Props {
+    title_name: string;
+}
+
+const { title_name } = Astro.props;
+---
+
+<div class="header">
+    <h1> {title_name} </h1>
+</div>
+
+<style>
+    .header h1{
+        font-family: "Maharlika";
+        color: #C8A263;
+        font-size: 70px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+        .header h1{
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .header h1{
+            font-size: 52px;
+        }
+    }
+</style>
