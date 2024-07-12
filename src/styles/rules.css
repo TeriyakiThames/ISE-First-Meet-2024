@@ -1,0 +1,76 @@
+#objective {
+	background: linear-gradient(to right, #c8a263, #dac7a6, #c8a263);
+	border-radius: 25px;
+	width: 90%;
+	font-family: "Maharlika";
+	font-size: 18px;
+	text-align: center;
+	color: #544122;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+#rules ol {
+	counter-reset: listItems;
+	color: white;
+	font-family: maharlika;
+	font-size: 18px;
+}
+
+#rules li {
+	display: flex;
+	margin-left: 30px;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+#rules li:before {
+	content: "0" counter(listItems);
+	counter-increment: listItems;
+	padding-right: 1em;
+	font-size: 35px;
+	/* Todo find a way to center the list number with list content*/
+	line-height: auto;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #c8a263;
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#scenario {
+	color: white;
+	font-family: maharlika;
+	padding: 20px;
+}
+
+#scenario h1 {
+	margin-left: 25px;
+	font-size: 25px;
+}
+
+#scenario ul {
+	counter-reset: listItems;
+	color: white;
+	font-family: maharlika;
+	font-size: 15px;
+}
+
+#scenario li {
+	display: flex;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+#scenario li:before {
+	content: "•";
+	padding-right: 0.5em;
+	font-size: 35px;
+	/* Todo find a way to center the list number with list content*/
+	line-height: auto;
+}

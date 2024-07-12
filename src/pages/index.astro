@@ -1,54 +1,54 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Navbar from '../components/Navbar.astro';
-import "../styles/index.css"
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
+import "../styles/index.css";
 ---
 
 <Layout title="ISE First Meet 2024 The Arcana">
 	<main>
-		<Navbar/>
-        <div id="title">
-            <h1>ISE First Meet 2024</h1>
-            <h2>The Arcana</h2>
-        </div>
+		<Navbar />
+		<div id="title">
+			<h1>ISE First Meet 2024</h1>
+			<h2>The Arcana</h2>
+		</div>
 
-        <div id="cards">
-            <div id="row1">
-                <Card
-			imageFront ="/images/card_front.png"
-			imageBack ="/images/card_back.png"
-			title ='card'
-			/>
-                <Card
-			imageFront ="/images/card_front.png"
-			imageBack ="/images/card_back.png"
-			title ='card'
-			/>
-                <Card
-			imageFront ="/images/card_front.png"
-			imageBack ="/images/card_back.png"
-			title ='card'
-			/>
-            </div>
-            <div id="row2">
-                <Card
-			imageFront ="/images/card_front.png"
-			imageBack ="/images/card_back.png"
-			title ='card'
-			/>
-                <Card
-			imageFront ="/images/card_front.png"
-			imageBack ="/images/card_back.png"
-			title ='card'
-			/>
-            </div>
-        </div>
+		<div id="cards">
+			<div id="row1">
+				<Card
+					imageFront="/images/card_front.png"
+					imageBack="/images/card_back.png"
+					title="card"
+				/>
+				<Card
+					imageFront="/images/card_front.png"
+					imageBack="/images/card_back.png"
+					title="card"
+				/>
+				<Card
+					imageFront="/images/card_front.png"
+					imageBack="/images/card_back.png"
+					title="card"
+				/>
+			</div>
+			<div id="row2">
+				<Card
+					imageFront="/images/card_front.png"
+					imageBack="/images/card_back.png"
+					title="card"
+				/>
+				<Card
+					imageFront="/images/card_front.png"
+					imageBack="/images/card_back.png"
+					title="card"
+				/>
+			</div>
+		</div>
 
-        <div id="countdown">
-            <h1>Time Until Next Card is Revealed</h1>
-            <h2 id="countdown_timer">00:00:00</h2>
+		<div id="countdown">
+			<h1>Time Until Next Card is Revealed</h1>
+			<h2 id="countdown_timer">00:00:00</h2>
 			<script src="../scripts/countdown.js"></script>
-        </div>
-    </main>
+		</div>
+	</main>
 </Layout>

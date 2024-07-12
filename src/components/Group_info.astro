@@ -1,54 +1,54 @@
 ---
 interface Props {
-    image: string;
-    groupName: string;
-    cardNunber: string;
+	image: string;
+	groupName: string;
+	cardNunber: string;
 }
 
 const { image, groupName, cardNunber } = Astro.props;
 ---
 
 <div id="parent">
-    <img id="image" src={image} alt="Profile Picutre">
-    <div id="child">
-        <h2>{groupName}</h2>
-        <h2>{cardNunber}</h2>
-    </div>
+	<img id="image" src={image} alt="Profile Picutre" />
+	<div id="child">
+		<h2>{groupName}</h2>
+		<h2>{cardNunber}</h2>
+	</div>
 </div>
 
 <style>
-    #image {
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-    }
+	#image {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
 
-/* Large Screens */
-    #parent {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin: 0 auto 15px;
-        width: 600px;
-    }
+	/* Large Screens */
+	#parent {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		margin: 0 auto 15px;
+		width: 600px;
+	}
 
-    #child {
-        background: linear-gradient(to right, #C8A263, #DAC7A6, #C8A263);
-        display: flex;
-        border-radius: 25px;
-        gap: 15%;
-        width: 75%;
-        font-family: "Maharlika";
-        color: #544122;
-        justify-content: space-between;
-        padding: 10px
-    }
+	#child {
+		background: linear-gradient(to right, #c8a263, #dac7a6, #c8a263);
+		display: flex;
+		border-radius: 25px;
+		gap: 15%;
+		width: 75%;
+		font-family: "Maharlika";
+		color: #544122;
+		justify-content: space-between;
+		padding: 10px;
+	}
 
-/* Small Screens */
-    @media (max-width: 600px) {
-    #parent {
-        width: 90%;
-    }
-    }
+	/* Small Screens */
+	@media (max-width: 600px) {
+		#parent {
+			width: 90%;
+		}
+	}
 </style>
