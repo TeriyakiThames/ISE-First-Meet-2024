@@ -83,11 +83,7 @@ hr {
 }
 
 #scenario li + li {
-	margin-top: 10px;
-}
-
-/* Medium Screen */
-@media (max-width: 1000px) {
+	margin-top: 20px;
 }
 
 /* Small Screen */
@@ -112,7 +108,7 @@ hr {
 
 	#scenario h1 {
 		margin-left: 25px;
-		font-size: 25px;
+		font-size: 30px;
 		margin-bottom: auto;
 	}
 }
