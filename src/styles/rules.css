@@ -41,15 +41,6 @@
 	line-height: -1;
 }
 
-hr {
-	border: none;
-	height: 1px;
-	background-color: #c8a263;
-	width: 600px;
-	margin: auto;
-	margin-top: 30px;
-}
-
 #scenario {
 	color: white;
 	font-family: maharlika;
@@ -97,10 +88,6 @@ hr {
 	#rules {
 		width: auto;
 		margin: auto;
-	}
-
-	hr {
-		width: 90%;
 	}
 
 	#scenario {

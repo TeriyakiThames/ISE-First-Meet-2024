@@ -20,22 +20,30 @@ const { card_info } = Astro.props;
 		margin: auto;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		gap: 10px;
 		font-size: 18px;
 		font-family: "Maharlika";
-		width: 90%;
+		width: 600px;
+	}
+
+	.parent:hover {
+		font-weight: bold;
+		color: #c8a263;
+	}
+
+	.info:hover {
+		color: #c8a263;
 	}
 
 	.name {
 		align-items: flex-start;
 		color: #c8a263;
-		width: 50%;
+		width: 45%;
 	}
 
 	.info {
 		color: white;
 		font-weight: normal;
-		width: 130%;
+		width: 155%;
 	}
 
 	/* Medium Screen */
@@ -44,5 +52,27 @@ const { card_info } = Astro.props;
 
 	/* Small Screen */
 	@media (max-width: 600px) {
+		.parent {
+			display: flex;
+			margin: auto;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			gap: 10px;
+			font-size: 15px;
+			font-family: "Maharlika";
+			width: 90%;
+		}
+
+		.name {
+			align-items: flex-start;
+			color: #c8a263;
+			width: 50%;
+		}
+
+		.info {
+			color: white;
+			font-weight: normal;
+			width: 130%;
+		}
 	}
 </style>

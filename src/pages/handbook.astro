@@ -91,6 +91,13 @@ import HorizontalRule from "../components/Horizontal_rule.astro";
 		<HorizontalRule />
 		<div id="value">
 			<Subtitle subtitle_name="Values of the Cards" />
+			<p id="loremIpsum">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet
+				purus turpis, consequat consequat justo sollicitudin non. Aliquam vel
+				nibh ac arcu iaculis porta. Vestibulum ac malesuada mauris. Cras sit
+				amet nunc at risus tempus pretium. In et bibendum elit. Morbi vitae
+				aliquet felis. Pellentesque in dui non massa rhoncus.
+			</p>
 		</div>
 	</main>
 </Layout>
@@ -99,5 +106,20 @@ import HorizontalRule from "../components/Horizontal_rule.astro";
 	#collectable,
 	#value {
 		padding-top: 30px;
+	}
+
+	#loremIpsum {
+		font-family: maharlika;
+		color: white;
+		font-size: 20px;
+		width: 600px;
+		margin: auto;
+	}
+
+	@media (max-width: 600px) {
+		#loremIpsum {
+			width: 90%;
+			font-size: 15px;
+		}
 	}
 </style>

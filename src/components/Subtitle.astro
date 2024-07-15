@@ -12,14 +12,30 @@ const { subtitle_name } = Astro.props;
 
 <style>
 	.subtitle {
+		width: 600px;
+		margin: auto;
+	}
+	.subtitle h1 {
 		background: linear-gradient(to right, #c8a263, #dac7a6, #c8a263);
 		border-radius: 25px;
 		font-family: "Maharlika";
 		font-size: 20px;
 		font-weight: bold;
 		color: #544122;
-		padding: 2px 10px 2px 10px;
 		display: inline-block;
-		margin: 10px 10px 30px 20px;
+		padding: 3px 10px 1px 10px;
+		margin: 10px 10px 30px 0px;
+	}
+
+	@media (max-width: 600px) {
+		.subtitle {
+			width: auto;
+			margin: auto;
+		}
+
+		.subtitle h1 {
+			padding: 3px 10px 1px 10px;
+			margin: 10px 10px 30px 20px;
+		}
 	}
 </style>
