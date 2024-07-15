@@ -10,33 +10,39 @@ const { card_info } = Astro.props;
 
 <!-- Copy card info from: https://docs.google.com/spreadsheets/d/13IPovK_vxKYPOCzkXmKajoYLLjhAtet-jw4KUdtaE0E/edit?usp=sharing -->
 <div class="parent">
-	<p>{card_name}</p>
-	<div class="child">
-		<p>{card_info}</p>
-	</div>
+	<p class="name">{card_name}</p>
+	<p class="info">{card_info}</p>
 </div>
 
 <style>
 	.parent {
 		display: flex;
-		align-items: flex-start;
-		margin: 10px;
+		margin: auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
 		gap: 10px;
 		font-size: 18px;
 		font-family: "Maharlika";
+		width: 90%;
+	}
+
+	.name {
+		align-items: flex-start;
 		color: #c8a263;
+		width: 50%;
 	}
 
-	.parent p {
-		width: 100px;
-	}
-
-	.child {
+	.info {
 		color: white;
 		font-weight: normal;
+		width: 130%;
 	}
 
-	.child p {
-		width: 500px;
+	/* Medium Screen */
+	@media (max-width: 1000px) {
+	}
+
+	/* Small Screen */
+	@media (max-width: 600px) {
 	}
 </style>

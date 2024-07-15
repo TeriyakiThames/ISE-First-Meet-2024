@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import Title from "../components/Title.astro";
 import Subtitle from "../components/Subtitle.astro";
 import CardInfo from "../components/Card_info.astro";
+import HorizontalRule from "../components/Horizontal_rule.astro";
 ---
 
 <Layout title="Handbook">
@@ -60,6 +61,7 @@ import CardInfo from "../components/Card_info.astro";
 				card_info="Choose if you can know every card in the main deck immediately but other teams will also know that your group has ‘Cheater’ card"
 			/>
 		</div>
+		<HorizontalRule />
 		<div id="collectable">
 			<Subtitle subtitle_name="Collectable Cards" />
 			<!-- Card 1 -->
@@ -86,8 +88,16 @@ import CardInfo from "../components/Card_info.astro";
 				card_info="Block any special card effect on the group once"
 			/>
 		</div>
+		<HorizontalRule />
 		<div id="value">
 			<Subtitle subtitle_name="Values of the Cards" />
 		</div>
 	</main>
 </Layout>
+
+<style>
+	#collectable,
+	#value {
+		padding-top: 30px;
+	}
+</style>
