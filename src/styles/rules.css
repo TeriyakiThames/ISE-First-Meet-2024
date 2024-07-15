@@ -1,7 +1,8 @@
+/* Large Screen */
 #objective {
 	background: linear-gradient(to right, #c8a263, #dac7a6, #c8a263);
 	border-radius: 25px;
-	width: 90%;
+	width: 600px;
 	font-family: "Maharlika";
 	font-size: 18px;
 	text-align: center;
@@ -9,6 +10,11 @@
 	padding: 10px;
 	margin: auto;
 	margin-bottom: 40px;
+}
+
+#rules {
+	width: 600px;
+	margin: auto;
 }
 
 #rules ol {
@@ -31,14 +37,14 @@
 	padding-right: 1em;
 	font-size: 35px;
 	/* Todo find a way to center the list number with list content*/
-	line-height: auto;
+	line-height: -1;
 }
 
 hr {
 	border: none;
 	height: 1px;
 	background-color: #c8a263;
-	width: 90%;
+	width: 600px;
 	margin: auto;
 	margin-top: 30px;
 }
@@ -47,11 +53,14 @@ hr {
 	color: white;
 	font-family: maharlika;
 	padding: 20px;
+	width: 600px;
+	margin: auto;
 }
 
 #scenario h1 {
 	margin-left: 25px;
-	font-size: 25px;
+	font-size: 35px;
+	margin-bottom: 10px;
 }
 
 #scenario ul {
@@ -64,13 +73,46 @@ hr {
 #scenario li {
 	display: flex;
 	margin-left: 20px;
-	vertical-align: middle;
 }
 
 #scenario li:before {
 	content: "•";
 	padding-right: 0.5em;
 	font-size: 35px;
-	/* Todo find a way to center the list number with list content*/
-	line-height: auto;
+	line-height: 1;
+}
+
+#scenario li + li {
+	margin-top: 10px;
+}
+
+/* Medium Screen */
+@media (max-width: 1000px) {
+}
+
+/* Small Screen */
+@media (max-width: 600px) {
+	#objective {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	#rules {
+		width: auto;
+		margin: auto;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+	#scenario {
+		width: auto;
+	}
+
+	#scenario h1 {
+		margin-left: 25px;
+		font-size: 25px;
+		margin-bottom: auto;
+	}
 }
