@@ -2,11 +2,92 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Title from "../components/Title.astro";
+import Subtitle from "../components/Subtitle.astro";
+import CardInfo from "../components/Card_info.astro";
 ---
 
 <Layout title="Handbook">
 	<main>
 		<Navbar />
 		<Title title_name="Handbook" />
+		<div id="active">
+			<Subtitle subtitle_name="Active Cards" />
+			<!-- Card 1 -->
+			<CardInfo
+				card_name="Steal:"
+				card_info="Steal 1 card from the other group"
+			/>
+
+			<!-- Card 2 -->
+			<CardInfo
+				card_name="Gamble:"
+				card_info="Choose to switch their cards with the other group"
+			/>
+
+			<!-- Card 3 -->
+			<CardInfo
+				card_name="Fortune:"
+				card_info="Give 1 of their cards to any other group (cannot give to themselves)"
+			/>
+
+			<!-- Card 4 -->
+			<CardInfo
+				card_name="Misfortune:"
+				card_info="Discard 1 cards from any group including their own cards"
+			/>
+
+			<!-- Card 5 -->
+			<CardInfo
+				card_name="Insight:"
+				card_info="Check how much pairs the group has right now with the main deck"
+			/>
+
+			<!-- Card 6 -->
+			<CardInfo
+				card_name="Glance:"
+				card_info="Take a look at a group’s hands"
+			/>
+
+			<!-- Card 7 -->
+			<CardInfo
+				card_name="Hands of God:"
+				card_info="Check 1 card in the main deck before the destined time"
+			/>
+
+			<!-- Card 8 -->
+			<CardInfo
+				card_name="Cheater:"
+				card_info="Choose if you can know every card in the main deck immediately but other teams will also know that your group has ‘Cheater’ card"
+			/>
+		</div>
+		<div id="collectable">
+			<Subtitle subtitle_name="Collectable Cards" />
+			<!-- Card 1 -->
+			<CardInfo
+				card_name="Blessing:"
+				card_info="If the group has this card in hand, +1 pair for the group"
+			/>
+
+			<!-- Card 2 -->
+			<CardInfo
+				card_name="Curse:"
+				card_info="If the group has this card in hand, -1 pair for the group"
+			/>
+
+			<!-- Card 3 -->
+			<CardInfo
+				card_name="Mirror:"
+				card_info="Reverse the special card effect back to the user"
+			/>
+
+			<!-- Card 4 -->
+			<CardInfo
+				card_name="Shield:"
+				card_info="Block any special card effect on the group once"
+			/>
+		</div>
+		<div id="value">
+			<Subtitle subtitle_name="Values of the Cards" />
+		</div>
 	</main>
 </Layout>

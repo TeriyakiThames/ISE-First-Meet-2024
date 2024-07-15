@@ -1,0 +1,42 @@
+---
+interface Props {
+	card_name: string;
+	card_info: string;
+}
+
+const { card_name } = Astro.props;
+const { card_info } = Astro.props;
+---
+
+<!-- Copy card info from: https://docs.google.com/spreadsheets/d/13IPovK_vxKYPOCzkXmKajoYLLjhAtet-jw4KUdtaE0E/edit?usp=sharing -->
+<div class="parent">
+	<p>{card_name}</p>
+	<div class="child">
+		<p>{card_info}</p>
+	</div>
+</div>
+
+<style>
+	.parent {
+		display: flex;
+		align-items: flex-start;
+		margin: 10px;
+		gap: 10px;
+		font-size: 18px;
+		font-family: "Maharlika";
+		color: #c8a263;
+	}
+
+	.parent p {
+		width: 100px;
+	}
+
+	.child {
+		color: white;
+		font-weight: normal;
+	}
+
+	.child p {
+		width: 500px;
+	}
+</style>
