@@ -1,19 +1,34 @@
 ---
 interface Props {
+<<<<<<< Updated upstream
     image: string;
     groupName: string;
     cardNunber: string;
+=======
+	image: string;
+	groupName: string;
+	CardNumber: string;
+>>>>>>> Stashed changes
 }
 
-const { image, groupName, cardNunber } = Astro.props;
+const { image, groupName, CardNumber } = Astro.props;
 ---
 
+<<<<<<< Updated upstream
 <div id="group_info">
     <img id="image" src={image} alt="Profile Picutre">
     <div id="info_box">
         <h2>{groupName}</h2>
         <h2>{cardNunber}</h2>
     </div>
+=======
+<div id="parent">
+	<img id="image" src={image} alt="Profile Picutre" />
+	<div id="child">
+		<h2>{groupName}</h2>
+		<h2>{CardNumber}</h2>
+	</div>
+>>>>>>> Stashed changes
 </div>
 
 <style>

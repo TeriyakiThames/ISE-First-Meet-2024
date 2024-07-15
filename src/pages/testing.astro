@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ---
 import Layout from '../layouts/Layout.astro';
 ---
@@ -44,3 +45,56 @@ import Layout from '../layouts/Layout.astro';
 
 
 
+=======
+<!-- ---
+import GroupInfo from "../components/Group_info.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tarot Cards</title>
+	</head>
+	<body>
+		<h1>Tarot Cards and Values</h1>
+		<GroupInfo
+			image="/images/group_images/Original_Hedgehog.png"
+			groupName="The Devil"
+			CardNumber={"12 Cards"}
+		/>
+		<ul id="tarotList"></ul>
+
+		<script>
+			// Assuming readGroup returns a Promise
+			import { readGroup } from "../scripts/getGroup.js";
+
+			// Define an async function to use await
+			async function fetchData() {
+				const groupDict = await readGroup();
+				populateHTML(groupDict);
+			}
+
+			// Function to populate HTML with data
+			function populateHTML(groupDict) {
+				const ul = document.getElementById("tarotList");
+				ul.innerHTML = ""; // Clear existing content
+
+				// Loop through groupDict and create list items
+				for (const card in groupDict) {
+					if (groupDict.hasOwnProperty(card)) {
+						const value = groupDict[card];
+						const li = document.createElement("li");
+						li.textContent = `${card}: ${value}`;
+						ul.appendChild(li);
+					}
+				}
+			}
+			// Call the async function to fetch data and populate HTML
+			fetchData();
+		</script>
+	</body>
+</html>
+-->
+>>>>>>> Stashed changes
