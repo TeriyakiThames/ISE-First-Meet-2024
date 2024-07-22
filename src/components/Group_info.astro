@@ -2,17 +2,17 @@
 interface Props {
 	image: string;
 	groupName: string;
-	cardNunber: string;
+	cardNumber: string;
 }
 
-const { image, groupName, cardNunber } = Astro.props;
+const { image, groupName, cardNumber } = Astro.props;
 ---
 
 <div id="parent">
 	<img id="image" src={image} alt="Profile Picutre" />
 	<div id="child">
 		<h2>{groupName}</h2>
-		<h2>{cardNunber}</h2>
+		<h2>{cardNumber}</h2>
 	</div>
 </div>
 
