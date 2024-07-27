@@ -15,7 +15,6 @@ document
 				document.getElementById("currentName").innerHTML = cardInfo[1];
 				document.getElementById("currentNumber").innerHTML =
 					cardInfo[0] + " cards";
-				// console.log(cardInfo);
 			} catch (error) {
 				console.error("Error fetching card info:", error);
 			}
@@ -38,26 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			if (passwordDoc.exists()) {
 				const storedPassword = passwordDoc.data().password;
-				// console.log("Stored password:", storedPassword);
 			} else {
 				console.error("No such document!");
 			}
 
 			const storedPassword = passwordDoc.data().password;
-			// console.log(storedPassword);
-			// console.log(password);
 			if (password !== storedPassword) {
 				console.error("Incorrect password!");
 				return;
 			}
 
 			await updateDoc(doc(collection(db, "Groups"), groupName), {
-				//name: groupName,
 				cardNumber: number,
 			});
 
-			console.log("Card number updated successfully!");
-			console.log(number);
+			console.log(`Card number of ${groupName} is now ${number}!`);
 		} catch (error) {
 			console.error("Error:", error);
 		}
