@@ -1,0 +1,46 @@
+---
+interface Props {
+	subtitle_name: string;
+}
+
+const { subtitle_name } = Astro.props;
+---
+
+<div class="subtitle">
+	<h1>{subtitle_name}</h1>
+</div>
+
+<style>
+	.subtitle {
+		width: 600px;
+		margin: auto;
+		margin-bottom: 30px;
+		display: flex;
+	}
+
+	.subtitle h1 {
+		background: linear-gradient(to right, #c8a263, #dac7a6, #c8a263);
+		border-radius: 25px;
+		font-family: "Maharlika";
+		font-size: 20px;
+		font-weight: bold;
+		color: #544122;
+		display: inline-block;
+		padding: 3px 10px 1px 10px;
+		margin: auto;
+	}
+
+	@media (max-width: 600px) {
+		.subtitle {
+			width: auto;
+			margin: auto;
+			margin-bottom: 30px;
+			display: flex;
+		}
+
+		.subtitle h1 {
+			padding: 3px 10px 1px 10px;
+			margin: auto;
+		}
+	}
+</style>

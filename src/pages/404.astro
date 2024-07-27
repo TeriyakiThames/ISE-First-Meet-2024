@@ -1,56 +1,57 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Error 404">
-    <main>
-        <div id="container">
-            <h1 id="title">Error 404 - Page Not Found</h1>
-            <p id="subtitle">You will be redirected to the homepage shortly.</p>
-            <p id="subtitle">If you are not redirected, <a href="/">click here</a>.</p>
-        </div>
-    </main>
+	<main>
+		<div id="container">
+			<h1 id="title">Error 404 - Page Not Found</h1>
+			<p id="subtitle">You will be redirected to the homepage shortly.</p>
+			<p id="subtitle">
+				If you are not redirected, <a href="/">click here</a>.
+			</p>
+		</div>
+	</main>
 </Layout>
 
 <style>
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: 'Maharlika';
-        color: white;
-    }
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		margin: 0;
+		font-family: "Maharlika";
+		color: white;
+	}
 
-    #container {
-        text-align: center;
-    }
+	#container {
+		text-align: center;
+	}
 
-    #title {
-        font-size: 70px;
-        
-    }
+	#title {
+		font-size: 70px;
+	}
 
-    #subtitle {
-        font-size: 35px;
-    }
-    #subtitle a:hover {
-        color: #C8A263;
-    }
+	#subtitle {
+		font-size: 35px;
+	}
+	#subtitle a:hover {
+		color: #c8a263;
+	}
 
-    @media (max-width: 480px) {
-        #title {
-            font-size: 35px;
-        }
-        #subtitle {
-            font-size: 17.5px;
-        }
-    }
+	@media (max-width: 480px) {
+		#title {
+			font-size: 35px;
+		}
+		#subtitle {
+			font-size: 17.5px;
+		}
+	}
 </style>
 
 <script>
-    setTimeout(() => {
-        window.location.href = '/';
-    }, 1000);
+	setTimeout(() => {
+		window.location.href = "/";
+	}, 1000);
 </script>

@@ -1,0 +1,78 @@
+---
+interface Props {
+	card_name: string;
+	card_info: string;
+}
+
+const { card_name } = Astro.props;
+const { card_info } = Astro.props;
+---
+
+<!-- Copy card info from: https://docs.google.com/spreadsheets/d/13IPovK_vxKYPOCzkXmKajoYLLjhAtet-jw4KUdtaE0E/edit?usp=sharing -->
+<div class="parent">
+	<p class="name">{card_name}</p>
+	<p class="info">{card_info}</p>
+</div>
+
+<style>
+	.parent {
+		display: flex;
+		margin: auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 18px;
+		font-family: "Maharlika";
+		width: 600px;
+	}
+
+	.parent:hover {
+		font-weight: bold;
+		color: #c8a263;
+	}
+
+	.info:hover {
+		color: #c8a263;
+	}
+
+	.name {
+		align-items: flex-start;
+		color: #c8a263;
+		width: 45%;
+	}
+
+	.info {
+		color: white;
+		font-weight: normal;
+		width: 155%;
+	}
+
+	/* Medium Screen */
+	@media (max-width: 1000px) {
+	}
+
+	/* Small Screen */
+	@media (max-width: 600px) {
+		.parent {
+			display: flex;
+			margin: auto;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			gap: 10px;
+			font-size: 15px;
+			font-family: "Maharlika";
+			width: 80%;
+		}
+
+		.name {
+			align-items: flex-start;
+			color: #c8a263;
+			width: 50%;
+		}
+
+		.info {
+			color: white;
+			font-weight: normal;
+			width: 130%;
+		}
+	}
+</style>

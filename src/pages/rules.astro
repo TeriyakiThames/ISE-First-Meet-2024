@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Title from "../components/Title.astro";
+import HorizontalRule from "../components/Horizontal_rule.astro";
+import "../styles/rules.css";
+---
+
+<Layout title="Rules">
+	<main>
+		<Navbar />
+		<Title title_name="Rules" />
+		<div id="objective">
+			<h1>
+				<strong>Objective:</strong> get most pair as possible with the main deck
+			</h1>
+		</div>
+		<div id="rules">
+			<ol>
+				<li>Each team will have 4 cards in hand</li>
+				<li>
+					Each group can obtain more cards or switch cards through “special
+					cards”
+				</li>
+				<li>
+					Each special cards will have different skills and can be obtained
+					through the missions played in the event
+				</li>
+			</ol>
+		</div>
+		<HorizontalRule />
+		<div id="scenario">
+			<h1>Scenario</h1>
+			<ul>
+				<li>
+					In case if any teams have an equal number of pairs, the team with the
+					higher pair value wins.
+				</li>
+				<li>
+					If pair values are identical, the team with more remaining cards wins.
+				</li>
+				<li>
+					If pair values are identical and the number of the remaining cards are
+					the same, the team with the higher total card value wins.
+				</li>
+			</ul>
+		</div>
+	</main>
+</Layout>
