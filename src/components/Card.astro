@@ -105,6 +105,10 @@ const { title, imageFront, imageBack } = Astro.props;
 <script>
 	function flipCard() {
 		const cardInner = document.querySelector(".card-inner");
-		cardInner.classList.toggle("is-flipped");
+		if (cardInner) {
+			cardInner.classList.toggle("is-flipped");
+		} else {
+			console.error("Element with class 'card-inner' not found.");
+		}
 	}
 </script>
