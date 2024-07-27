@@ -24,18 +24,3 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const db = getFirestore(app);
-
-export const groupName = [
-	"The Fool",
-	"The Magician",
-	"The Emperor",
-	"The Lovers",
-	"The Chariot",
-	"The Hermit",
-	"The Justice",
-	"The Devil",
-	"The Star",
-	"The Moon",
-	"The Sun",
-	"The World",
-];
