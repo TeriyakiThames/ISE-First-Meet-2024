@@ -8,11 +8,39 @@ button:hover {
 
 #selectorButtons {
 	display: flex;
-	width: 600px;
+	width: 800px;
 	margin: auto;
 	justify-content: center;
 	gap: 10px;
 	color: white;
+	font-size: 19px;
+}
+
+#currentInfo,
+#newInfo {
+	color: white;
+	width: 800px;
+	margin: auto;
+	align-self: center;
+}
+
+#currentInfo p,
+#newInfo label {
+	color: #c8a263;
+}
+
+#currentInfo h1,
+#newInfo h1 {
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	border: 2px solid #c8a263;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	color: black;
+	padding: 5px;
 }
 
 @media (max-width: 600px) {
