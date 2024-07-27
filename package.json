@@ -13,11 +13,7 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.11.1",
-<<<<<<< Updated upstream
-    "firebase": "^10.12.2",
-=======
     "firebase": "^10.12.3",
->>>>>>> Stashed changes
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   }

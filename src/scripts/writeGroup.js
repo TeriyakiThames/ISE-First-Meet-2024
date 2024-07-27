@@ -42,11 +42,9 @@ const groupName = [
 ];
 
 for (let i = 0; i < groupName.length; i++) {
-    console.log(groupName[i]);
-    await setDoc(doc(groupsRef, groupName[i]), {
-        name: groupName[i],
-        cardNumber: 4,
-    });
+	console.log(groupName[i]);
+	await setDoc(doc(groupsRef, groupName[i]), {
+		name: groupName[i],
+		cardNumber: 4,
+	});
 }
-
-
