@@ -51,6 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
 				cardNumber: number,
 			});
 
+			// Show pop up that card is updated
+			var x = document.getElementById("snackbar");
+			x.className = "show";
+			setTimeout(function () {
+				x.className = x.className.replace("show", "");
+			}, 3000);
+
 			console.log(`Card number of ${groupName} is now ${number}!`);
 		} catch (error) {
 			console.error("Error:", error);
