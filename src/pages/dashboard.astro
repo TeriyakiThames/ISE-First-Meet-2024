@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title.astro";
 import Navbar from "../components/Navbar.astro";
+import "../styles/dashboard.css";
 ---
 
 <Layout title="Dashboard">
@@ -169,40 +170,3 @@ import Navbar from "../components/Navbar.astro";
 
 	<script src="../scripts/appendData.js"></script>
 </Layout>
-
-<style>
-	#image {
-		width: 35px;
-		height: 35px;
-		border-radius: 50%;
-	}
-
-	/* Large Screens */
-	#groupBar {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		margin: 0 auto 15px;
-		width: 600px;
-	}
-
-	#groupInfo {
-		background: linear-gradient(to right, #c8a263, #dac7a6, #c8a263);
-		display: flex;
-		border-radius: 25px;
-		gap: 15%;
-		width: 75%;
-		font-family: "Maharlika";
-		color: #544122;
-		justify-content: space-between;
-		padding: 5px 10px 5px 10px;
-	}
-
-	/* Small Screens */
-	@media (max-width: 600px) {
-		#groupBar {
-			width: 90%;
-		}
-	}
-</style>
