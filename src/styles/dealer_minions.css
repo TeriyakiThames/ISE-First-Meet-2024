@@ -24,14 +24,16 @@ button:hover {
 	align-self: center;
 }
 
-#currentInfo p,
-#newInfo label {
-	color: #c8a263;
-}
-
 #currentInfo h1,
 #newInfo h1 {
 	font-weight: bold;
+	font-size: 30px;
+}
+
+#currentInfo p,
+#newInfo label {
+	color: #c8a263;
+	font-size: 20px;
 }
 
 input {
@@ -43,11 +45,22 @@ input {
 	padding: 5px;
 }
 
+input[type="submit"] {
+	color: white;
+	background-color: #c8a263;
+}
+
+input[type="submit"]:hover {
+	color: white;
+	background-color: grey;
+}
+
 @media (max-width: 600px) {
 	#selectorButtons {
 		flex-wrap: wrap;
 		width: 90%;
 		gap: 10px;
+		font-size: 17px;
 	}
 
 	#currentInfo,
