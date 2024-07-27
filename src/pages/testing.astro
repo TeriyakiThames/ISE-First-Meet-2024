@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title from "../components/Title.astro";
+---
+
+<Layout title="Testing Firebase">
+	<main class="flex-container">
+		<Title title_name="Testing" />
+		<ul id="groupList" class="text-white"></ul>
+	</main>
+
+	<script>
+		import { readDB } from "../scripts/read";
+		import { groupName } from "../firebase.js";
+		async function appendGroupData() {
+			for (let i = 0; i < 12; i++) {
+				try {
+					// Wait for readDB that searches the group name then displays it.
+					const result = await readDB(groupName[i]);
+					if (result.length > 0) {
+						// Create a new div with a unique ID
+						const groupDiv = document.createElement("div");
+						groupDiv.id = `group${i}`;
+
+						// Create and append the name and number elements
+						const nameNode = document.createElement("h1");
+						const numberNode = document.createElement("h2");
+						const name = document.createTextNode(result[1]);
+						const number = document.createTextNode(result[0]);
+						nameNode.appendChild(name);
+						numberNode.appendChild(number);
+
+						groupDiv.appendChild(nameNode);
+						groupDiv.appendChild(numberNode);
+
+						// Append the new div to the groupList element
+						document.getElementById("groupList").appendChild(groupDiv);
+					} else {
+						console.log("No data found for group:", groupName[i]);
+					}
+				} catch (error) {
+					console.error("Error reading data:", error);
+				}
+			}
+		}
+
+		// Call the function to run it 12 times
+		appendGroupData();
+	</script>
+</Layout>
+
+<style>
+	#groupList {
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+		align-items: center;
+		gap: 1rem; /* Space between each group */
+	}
+</style>
