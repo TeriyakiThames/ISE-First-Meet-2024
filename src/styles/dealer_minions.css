@@ -1,0 +1,55 @@
+body {
+	font-family: maharlika;
+}
+
+button:hover {
+	color: #c8a263;
+}
+
+#selectorButtons {
+	display: flex;
+	width: 600px;
+	margin: auto;
+	justify-content: center;
+	gap: 10px;
+	color: white;
+}
+
+@media (max-width: 600px) {
+	#selectorButtons {
+		flex-wrap: wrap;
+		width: 90%;
+		gap: 10px;
+	}
+
+	#currentInfo,
+	#newInfo {
+		color: white;
+		width: 80%;
+		margin: auto;
+		align-self: center;
+	}
+
+	#currentInfo p,
+	#newInfo label {
+		color: #c8a263;
+	}
+
+	#currentInfo h1,
+	#newInfo h1 {
+		font-weight: bold;
+	}
+
+	input {
+		width: 100%;
+		border: 2px solid #c8a263;
+		border-radius: 4px;
+		margin-bottom: 20px;
+		color: black;
+		padding: 5px;
+	}
+
+	#form-group {
+		color: black;
+	}
+}

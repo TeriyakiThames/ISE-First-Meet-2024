@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title from "../components/Title.astro";
+import Navbar from "../components/Navbar.astro";
+import "../styles/dealer_minions.css";
+---
+
+<Layout title="Dealer Minions🍌">
+	<main>
+		<Navbar />
+		<Title title_name="Dealer" />
+
+		<!-- Button to check each group -->
+		<div id="selectorButtons">
+			<button id="0">Chariot</button>
+			<button id="1">Devil</button>
+			<button id="2">Emperor</button>
+			<button id="3">Fool</button>
+			<button id="4">Hermit</button>
+			<button id="5">Justice</button>
+			<button id="6">Lovers</button>
+			<button id="7">Magician</button>
+			<button id="8">Moon</button>
+			<button id="9">Star</button>
+			<button id="10">Sun</button>
+			<button id="11">World</button>
+		</div>
+
+		<br />
+
+		<!-- Current Info -->
+		<div id="currentInfo">
+			<h1 id="headerInfo">Current Info:</h1>
+			<p id="groupName">Group Name</p>
+			<p id="password">00</p>
+		</div>
+
+		<br />
+		<!-- New Info -->
+		<div id="newInfo">
+			<h1>New Info:</h1>
+			<!-- Forms -->
+			<div class="form-container">
+				<form id="forms">
+					<div class="form-group">
+						<label for="password">Dealer Password</label>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							placeholder="Password"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<label for="groupName">Group Name</label>
+						<input
+							type="text"
+							id="groupName"
+							name="groupName"
+							placeholder="E.g. The Fool"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<label for="cardNumber">Card Number</label>
+						<input
+							type="number"
+							id="cardNumber"
+							name="cardNumber"
+							placeholder="E.g. 4"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+</Layout>
