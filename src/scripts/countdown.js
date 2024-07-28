@@ -1,6 +1,6 @@
 //First reveal: Jul 28, 2024 12:00:00
 //Second reveal: Auditorium time
-var countDownDate = new Date("Jul 28, 2024 12:00:00").getTime();
+var countDownDate = new Date("Jul 28, 2024 15:30:00").getTime();
 var x = setInterval(function () {
 	var now = new Date().getTime();
 	var distance = countDownDate - now;
