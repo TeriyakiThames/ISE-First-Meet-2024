@@ -12,6 +12,7 @@ var x = setInterval(function () {
 
 	if (distance < 0) {
 		clearInterval(x);
-		document.getElementById("countdown_timer").innerHTML = "Card is revealed!";
+		document.getElementById("countdown_timer").innerHTML =
+			"Cards will be revealed soon!";
 	}
 }, 1000);
